@@ -16,11 +16,17 @@ export const metadata: Metadata = {
   },
 };
 
+import { AuthProvider } from '@/lib/auth-context';
+import { AuthModal } from '@/components/AuthModal';
+
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang="tr">
       <body suppressHydrationWarning className="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500/30 selection:text-cyan-200 min-h-screen">
-        {children}
+        <AuthProvider>
+          {children}
+          <AuthModal />
+        </AuthProvider>
       </body>
     </html>
   );
