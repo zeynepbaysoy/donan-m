@@ -1,0 +1,6 @@
+{
+  "name": "Donanımsal",
+  "description": "Bilişim Teknolojilerinin Temelleri dersi için İç ve Dış Donanım Birimleri etkileşimli öğrenme ve oyun platformu.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
